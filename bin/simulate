@@ -1,0 +1,5 @@
+#! /usr/bin/env ruby
+$: << "lib"
+require "bowling_solitaire"
+simulator = BowlingSolitaire::Simulator.new(ARGV[0].to_i || 10_000)
+puts simulator.run
